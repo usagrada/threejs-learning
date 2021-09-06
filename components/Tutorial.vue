@@ -1,7 +1,8 @@
 <!-- Please remove this file from your project -->
 <template>
   <div>
-    <img src="practice-tokei.svg" alt="" srcset="">
+    <!-- <img src="" alt="" srcset="practice-tokei.svg" /> -->
+    <Clock id="hello"/>
     <PracticeClock2 />
     <div
       class="flex items-top justify-center min-h-screen sm:items-center sm:pt-0"
@@ -118,3 +119,17 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+import Clock from '~/assets/practice-tokei.svg'
+export default Vue.extend({
+  components: {
+    Clock,
+  },
+})
+</script>
+<style lang="scss" scoped>
+#hello {
+  width: 500px;
+}
+</style>
